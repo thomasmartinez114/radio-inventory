@@ -17,6 +17,10 @@ connection.once("open", () => {
   console.log("MongoDB database connection established successfully");
 });
 
+const radiosRouter = require("./routes/radios");
+
+app.use("/radios", radiosRouter);
+
 app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
 });
