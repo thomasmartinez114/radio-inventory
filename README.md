@@ -1,10 +1,12 @@
 WPD Radio Tracking - built by Thomas Martinez
 
-- Will need to move MongoDB from personal account to work account
+- nodemon server
 
-- Referenced https://www.youtube.com/watch?v=7CqJlxBYj-M
+* Will need to move MongoDB from personal account to work account
 
-- Dependencies installed
+* Referenced https://www.youtube.com/watch?v=7CqJlxBYj-M
+
+* Dependencies installed
 
   - [x] Express
     - Lightweight framework for Nodejs
@@ -17,13 +19,13 @@ WPD Radio Tracking - built by Thomas Martinez
   - [x] Nodemon
     - Nodemon is a tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected.
 
-- Main screen: two toggles (Mobile - Vehicle or Portable - Office)
-- List: Model, Serial, MDCID, Officer/Car, Date Issued
+* Main screen: two toggles (Mobile - Vehicle or Portable - Office)
+* List: Model, Serial, MDCID, Officer/Car, Date Issued
 
-- [ ] Landing Page:
+* [ ] Landing Page:
   - [ ] Mobile (Vehicle)
   - [ ] Portable (Officer)
-- [ ] List:
+* [ ] List:
   - [ ] Model
   - [ ] Serial
   - [ ] MDCID
