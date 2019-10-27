@@ -14,13 +14,13 @@ app.use(express.json());
 
 // Connect MongoDB
 const uri = process.env.ATLAS_URI;
-mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true });
+mongoose.connect(uri, { useNewUrWlParser: true, useCreateIndex: true, useUnifiedTopology: true });
 const connection = mongoose.connection;
 connection.once('open', () => {
   console.log('MongoDB connection established successfully');
 });
 
-// Routes
+// Routes0
 const radiosRouter = require('./routes/radios');
 
 app.use('/radios', radiosRouter);
