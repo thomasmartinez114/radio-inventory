@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 // import DatePicker from 'react-datepicker';
 // import 'react-datepicker/dist/react-datepicker.css';
 
@@ -65,6 +66,9 @@ export default class CreateRadio extends Component {
     };
 
     console.log(radio);
+
+    //   Connect to backend
+    axios.post('http://localhost:5000/radios/add', radio).then(res => console.log(res.data));
 
     // Take person back to homepage after submitting radio
     window.location = '/';
