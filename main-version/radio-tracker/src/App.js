@@ -11,11 +11,13 @@ import CreateRadio from './components/create-radio.component';
 function App() {
   return (
     <Router>
-      <Navbar />
-      <br />
-      <Route path='/' exact component={RadioList} />
-      <Route path='/edit/:id' exact component={EditRadio} />
-      <Route path='/create' exact component={CreateRadio} />
+      <div className='containter'>
+        <Navbar />
+        <br />
+        <Route path='/' exact component={RadioList} />
+        <Route path='/edit/:id' exact component={EditRadio} />
+        <Route path='/create' exact component={CreateRadio} />
+      </div>
     </Router>
   );
 }
