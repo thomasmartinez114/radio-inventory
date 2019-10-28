@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
 
 export default class CreateRadio extends Component {
   constructor(props) {
@@ -17,16 +19,8 @@ export default class CreateRadio extends Component {
       serial: '',
       mdcid: '',
       assigned: '',
-      dateIssued: new Date(),
-      users: []
+      dateIssued: new Date()
     };
-  }
-
-  componentDidMount() {
-    this.setState({
-      users: ['ASD'],
-      username: 'ASD Radio Tech'
-    });
   }
 
   onChangeModel(e) {
@@ -105,12 +99,12 @@ export default class CreateRadio extends Component {
             <label>Assigned To: </label>
             <input type='text' className='form-control' value={this.state.assigned} onChange={this.onChangeAssigned} />
           </div>
-          {/* <div className='form-group'>
+          <div className='form-group'>
             <label>Date: </label>
             <div>
               <DatePicker selected={this.state.date} onChange={this.onChangeDate} />
             </div>
-          </div> */}
+          </div>
         </form>
       </div>
     );
